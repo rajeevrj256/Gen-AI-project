@@ -20,7 +20,7 @@ def generate_images(prompt, num_images):
                 image.save(image_path)  # Save as PNG
                 generated_images.append((image, image_path))  # Store image and path
             except UnidentifiedImageError:
-                st.error("The response is not a valid image. Please try again with a different prompt or model.")
+                st.error("The response is not a valid image. Please try again with a different prompt")
         else:
             st.error("Unable to generate image right now. Please try after some time.")
     
