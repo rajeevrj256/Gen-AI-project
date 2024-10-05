@@ -1,0 +1,39 @@
+.RightSide {
+  flex: 1; /* Makes sure this takes up all remaining space */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; /* For overlay positioning */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.textAreaWrapper {
+  position: relative; /* For positioning the spinner overlay */
+  width: 100%;
+}
+
+.TextArea {
+  width: 100%;
+  height: 90vh; /* Adjust height as needed */
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.spinnerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent overlay */
+  z-index: 1; /* Ensure it appears above the textarea */
+}

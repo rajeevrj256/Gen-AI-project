@@ -1,0 +1,47 @@
+/* App.css */
+
+.App {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Ensure no default margin */
+  }
+  
+  .LeftSide {
+    flex: 30%; /* Takes 30% of the width */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px; /* Optional: Add padding for spacing */
+    background-color: #f4f4f4; /* Optional: Add a background color for better visibility */
+  }
+  
+  .RightSide {
+    flex: 70%; /* Takes 70% of the width */
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Optional: Add padding for spacing */
+    background-color: #eaeaea; /* Optional: Add a background color for better visibility */
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .TextArea {
+    width: 100%;
+    height: 100%;
+    resize: vertical;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .spinner{
+    margin: 10%;
+  }
+  
